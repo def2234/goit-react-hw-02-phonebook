@@ -3,17 +3,8 @@ import { FormContacts } from './FormContacts/FormContacts.js';
 import { nanoid } from 'nanoid';
 import { ContactsList } from './ContactsList/ContactsList';
 import { Filter } from './Filter/Filter';
-import PropTypes from 'prop-types';
 
 export class App extends Component {
-  static propTypes = {
-    createContact: PropTypes.func,
-    value: PropTypes.shape({
-      filter: PropTypes.string.isRequired,
-    }),
-    contacts: PropTypes.func,
-    onDeleteContact: PropTypes.func,
-  };
   state = {
     contacts: [],
     filter: '',

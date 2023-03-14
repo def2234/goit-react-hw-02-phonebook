@@ -4,12 +4,7 @@ import { Form, Btn, Label, P, Input } from './FormContacts-styled';
 
 export class FormContacts extends Component {
   static propTypes = {
-    onChange: PropTypes.func,
-    value: PropTypes.shape({
-      name: PropTypes.string.isRequired,
-    }),
-    disabled: PropTypes.bool,
-    onClick: PropTypes.func,
+    createContact: PropTypes.func.isRequired,
   };
 
   state = {
